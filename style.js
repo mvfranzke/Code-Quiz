@@ -15,5 +15,10 @@ var questions = [
     choices: ["#example", ".example", "*example", "example"],
     answer: ".example",
   },
-
+  {
+    title: "How can you select all <h1> elements on a page in CSS?",
+    choices: ["#h1", ".h1", "*h1", "h1"],
+    answer: "h1",
+  },
+  
   
