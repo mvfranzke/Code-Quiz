@@ -10,4 +10,10 @@ var questions = [
     choices: ["class", "id", "style", "src"],
     answer: "style",
   },
+  {
+    title: "How can you select an element with the class 'example' in CSS?",
+    choices: ["#example", ".example", "*example", "example"],
+    answer: ".example",
+  },
+
   
