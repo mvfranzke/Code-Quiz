@@ -20,5 +20,11 @@ var questions = [
     choices: ["#h1", ".h1", "*h1", "h1"],
     answer: "h1",
   },
-  
+  {
+    title: "What is the purpose of the 'querySelector()' method in JavaScript?",
+    choices: ["To select and modify HTML elements", "To perform mathematical calculations", "To define functions", "To create loops",],
+    answer: "To select and modify HTML elements",
+  },
+];
+
   
