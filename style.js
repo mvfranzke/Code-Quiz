@@ -5,4 +5,9 @@ var questions = [
     choices: ["href", "src", "link", "url"],
     answer: "href",
   },
+  {
+    title: "Which attribute used to define inline styles in HTML?",
+    choices: ["class", "id", "style", "src"],
+    answer: "style",
+  },
   
