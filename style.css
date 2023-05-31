@@ -47,8 +47,8 @@ input[type="text"] {
   list-style: circle;
   list-style-type: square;
   text-align: justify;
+  background-color:white
 }
-
 
 ol {
   padding-left: 0px;
