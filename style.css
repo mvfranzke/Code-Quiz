@@ -4,6 +4,7 @@ body {
   font-size: 120%;
 }
 
+/* style applied for the hyperlink in viewing the highscore */
 a {
   color: #563d7c;
   text-decoration: none;
@@ -14,6 +15,7 @@ a:hover {
   color: #8570a5;
 }
 
+/* style applied for buttons */
 button {
   display: inline-block;
   margin: 5px;
@@ -27,9 +29,11 @@ button {
   transition: background-color 0.1s;
 }
 
+ /* style applied when mouse hovers button */
 button:hover {
   background-color: #8570a5;
 }
+
 
 .choices button {
   display: block;
@@ -66,6 +70,7 @@ li:nth-child(odd) {
   max-width: 600px;
 }
 
+/* style applied to hide scores and questions before quiz us started */
 .hide {
   display: none;
 }
