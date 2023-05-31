@@ -8,12 +8,28 @@
   <title>Timed Quiz</title>
 </head>
 
-
-
 <body>
-  <div class="scores"><a href="highscores.html">View Highscores</a></div>
+  <!-- link to view previous scores-->
+  <div class="scores"><a href="highscores.html">View Score Log</a></div> 
 
-  <div class="timer">Time: <span id="time">0</span></div>
+  <!-- Timer to denote remaining seconds to take the quiz -->
+  <div class="timer">Time Left: <span id="time">0</span></div>
+ 
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Coding Test Game</h1>
+      <ul>
+        <li>You have 1 minute to answer questions related to coding - HTML, Java, CSS.</li>
+        <li>For each incorrect answer, 5 seconds will be deducted from your total time.</li>
+        <li>Once you finish answering all question or when timer reaches 0, the game will end and you can save you score.</li>
+      </ul>
+      <button id="start">Start Quiz</button>
+    </div>
+
+
+
+
+
 
 <script src="./style.js"></script>  
 </body>
