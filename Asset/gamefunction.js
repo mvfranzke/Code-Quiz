@@ -31,6 +31,7 @@ function startQuiz() {
 }
 
 
+/* function to loop the set of questions in questionnaire js */
 function getQuestion() {
   /* returns the questions from questionnaire js */
   var currentQuestion = questions[currentQuestionIndex];
