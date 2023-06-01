@@ -14,7 +14,7 @@ function printHighscores() {
     let liTag = document.createElement('li');
     liTag.textContent = highscores[i].initials + ' - ' + highscores[i].score;
 
-    
+  /* use appendChild to display created li element on the page */  
     let olEl = document.getElementById('highscores');
     olEl.appendChild(liTag);
   }
