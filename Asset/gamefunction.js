@@ -57,18 +57,18 @@ function getQuestion() {
 
 /* function to check if user selected the correct answer or not */
 function questionClick(event) {
-  var buttonEl = event.target;
+  let buttonEl = event.target;
 
-  // if the clicked element is not a choice button, do nothing.
+  /* set to return if user does not select any answer */
   if (!buttonEl.matches(".choice")) {
     return;
   }
 
-  // check if user guessed wrong
+  /* if user selected incorrect answer, will be penalized by subtracting 10 seconds from the total time */
   if (buttonEl.value !== questions[currentQuestionIndex].answer) {
-    // penalize time
     time -= 10;
 
+    /* prevent negative time */
     if (time < 0) {
       time = 0;
     }
