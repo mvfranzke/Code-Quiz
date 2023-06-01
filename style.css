@@ -23,3 +23,32 @@ button:hover {
   background-color: #ca6702;
 }
 
+/* style applied for multiple choice */
+.choices button {
+  display: block;
+}
+
+/* style applied for inputing name */
+input[type="text"] {
+  font-size: 100%;
+}
+
+/* style applied for questions */
+.instruction {
+  list-style: circle;
+  list-style-type: square;
+  text-align: justify;
+  background-color:white
+}
+
+/* style for choices list */
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
