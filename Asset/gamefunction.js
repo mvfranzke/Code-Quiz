@@ -120,7 +120,7 @@ function saveHighscore() {
   /* get text value when user enters their name, set trim to remove spaces */
   let initials = initialsEl.value.trim();
 
-  // make sure value wasn't empty
+  /* prevents user from not entering any name */
   if (initials !== "") {
     // get saved scores from localstorage, or if not any, set to empty array
     var highscores =
