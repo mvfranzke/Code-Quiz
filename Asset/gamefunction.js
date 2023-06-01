@@ -94,14 +94,14 @@ function quizEnd() {
   clearInterval(timerId);
 
   /* once timer terminates, the time left will appear on the screen */
-  var endScreenEl = document.getElementById("end-screen");
+  let endScreenEl = document.getElementById("end-screen");
   endScreenEl.removeAttribute("class");
 
   /* will count users correct answer against the total question and returns it on the page as 100% */
   let scorePercentage = (correctCount / questions.length) * 100;
   finalScoreEl.textContent = scorePercentage + "%";
 
-  // hide questions section
+  /* hides the question section of the page to reveal saveHighscore */
   questionsEl.setAttribute("class", "hide");
 }
 
