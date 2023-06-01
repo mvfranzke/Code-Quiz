@@ -1,3 +1,4 @@
+// List of question, choices and correct answer for the quiz
 let questions = [
   {
     title:
