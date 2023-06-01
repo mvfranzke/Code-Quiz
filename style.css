@@ -52,3 +52,10 @@ li {
   padding: 5px;
   list-style: decimal inside none;
 }
+
+/* div style for main page */
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
