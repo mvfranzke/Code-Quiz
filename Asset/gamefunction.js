@@ -106,5 +106,17 @@ function quizEnd() {
 }
 
 
+/* function to keep track of remaining time while user is answering the quiz */
+function clockTick() {
+  time--;
+  timerEl.textContent = time;
+  if (time <= 0) {
+    quizEnd();
+  }
+}
+
+
+
+
 
 //Initiators
