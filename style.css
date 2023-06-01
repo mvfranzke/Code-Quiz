@@ -59,3 +59,8 @@ li {
   max-width: 600px;
 }
 
+/* style applied to hide scores and questions before quiz us started */
+.hide {
+  display: none;
+}
+
