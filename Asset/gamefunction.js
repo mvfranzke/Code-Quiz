@@ -117,7 +117,7 @@ function clockTick() {
 
 /* save score in window local storage */
 function saveHighscore() {
-  // get value of input box
+  /* get text value when user enters their name, set trim to remove spaces */
   let initials = initialsEl.value.trim();
 
   // make sure value wasn't empty
