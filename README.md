@@ -12,7 +12,7 @@ URL of deployed application : https://mvfranzke.github.io/Code-Quiz/
 
 URL of Github repository : https://github.com/mvfranzke/Code-Quiz
 
-Screenshot of deployed application can be found here: ![alt text](./Image/screenshot%20of%20deployed%20project.jpg)
+Screenshot of deployed application can be found here: ![alt text](./screenshot%20of%20deployed%20app.jpg)
 
 ## Credits
 I used the following as additional resources when creating the webpage:
@@ -23,7 +23,7 @@ www.freecodecamp.org
 
 https://fonts.google.com/
 
-https:stackoverflow.com
+https://stackoverflow.com/
 
 ## License
 N/A
