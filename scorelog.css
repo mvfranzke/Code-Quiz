@@ -44,3 +44,10 @@ li {
 li:nth-child(odd) {
   background-color: #f3edfc;
 }
+
+/* style set for div portion of page */
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
