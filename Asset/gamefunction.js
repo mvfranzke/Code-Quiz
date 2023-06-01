@@ -90,14 +90,14 @@ function questionClick(event) {
 
 /* function to terminate the game if user run out of time or have completed answering all question on the questionnaire js list */
 function quizEnd() {
-  // stop timer
+  /* terminates the timer */
   clearInterval(timerId);
 
-  // show end screen
+  /* once timer terminates, the time left will appear on the screen */
   var endScreenEl = document.getElementById("end-screen");
   endScreenEl.removeAttribute("class");
 
-  // show final score
+  /* will count users correct answer against the total question and returns it on the page as 100% */
   let scorePercentage = (correctCount / questions.length) * 100;
   finalScoreEl.textContent = scorePercentage + "%";
 
