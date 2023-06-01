@@ -152,7 +152,7 @@ function checkForEnter(event) {
 /* initiate saveHighScore once user click the submit button in index html */
 submitBtn.onclick = saveHighscore;
 
-// user clicks button to start quiz
+/* Initiate startQuiz function once user click the Start Quiz button in index html */
 startBtn.onclick = startQuiz;
 
 // user clicks on element containing choices
