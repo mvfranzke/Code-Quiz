@@ -27,7 +27,8 @@ function clearHighscores() {
 }
 
 
+/* deletes local storage file when user clicks the clear button */
 document.getElementById('clear').onclick = clearHighscores;
 
-// run function when page loads
+/* initiats the display of scores on the page */
 printHighscores();
