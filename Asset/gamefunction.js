@@ -125,8 +125,8 @@ function saveHighscore() {
     /* returns previous saved values */
     let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
-    // format new score object for current user
-    var newScore = {
+    /* get name and score for the current user */
+    let newScore = {
       score: finalScoreEl.textContent,
       initials: initials,
     };
