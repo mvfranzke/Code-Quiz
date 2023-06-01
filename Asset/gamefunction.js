@@ -140,6 +140,7 @@ function saveHighscore() {
   }
 }
 
+/* function to initiate to save score after user entered the name */
 function checkForEnter(event) {
   if (event.key === "Enter") {
     saveHighscore();
