@@ -158,4 +158,5 @@ startBtn.onclick = startQuiz;
 /* Initiates questionClick function evertime user selects an answer to the list of questions */
 choicesEl.onclick = questionClick;
 
+/* Initiates checkforEnter when user use a key to prevent empty initials */
 initialsEl.onkeyup = checkForEnter;
