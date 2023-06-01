@@ -3,3 +3,9 @@ body {
   font-family: 'Cabin', sans-serif;
   font-size: 120%;
 }
+
+/* style for Score Log text */
+h2 {
+  text-align: center;
+  text-decoration:underline;
+}
