@@ -20,10 +20,12 @@ function printHighscores() {
   }
 }
 
+/* deletes all data in local storage and reloads it */
 function clearHighscores() {
   window.localStorage.removeItem('highscores');
   window.location.reload();
 }
+
 
 document.getElementById('clear').onclick = clearHighscores;
 
