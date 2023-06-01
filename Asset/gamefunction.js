@@ -69,26 +69,41 @@ function questionClick(event) {
     time -= 10;
 
     /* prevent negative time */
-    if (time < 0) {
+      if (time < 0) {
       time = 0;
-    }
-    timerEl.textContent = time;
-  } else {
+      }
+      timerEl.textContent = time;
+      } else {
     /* user will receive 1 pts for every correct answer */
-    correctCount++;
-  }
+      correctCount++;
+      }
   /* loads the next question on the screen */
-  currentQuestionIndex++;
+      currentQuestionIndex++;
 
   /* if user have answered all question, quizEnd function to be initiated, otherwise the next question will load on the screen */
-  if (time <= 0 || currentQuestionIndex === questions.length) {
-    quizEnd();
-  } else {
-    getQuestion();
-  }
+      if (time <= 0 || currentQuestionIndex === questions.length) {
+      quizEnd();
+      } else {
+      getQuestion();
+      }
 }
 
+/* function to terminate the game if user run out of time or have completed answering all question on the questionnaire js list */
+function quizEnd() {
+  // stop timer
+  clearInterval(timerId);
 
+  // show end screen
+  var endScreenEl = document.getElementById("end-screen");
+  endScreenEl.removeAttribute("class");
+
+  // show final score
+  let scorePercentage = (correctCount / questions.length) * 100;
+  finalScoreEl.textContent = scorePercentage + "%";
+
+  // hide questions section
+  questionsEl.setAttribute("class", "hide");
+}
 
 
 
