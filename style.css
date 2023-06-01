@@ -4,6 +4,10 @@ body {
   font-size: 100%;
 }
 
+h2, p {
+  text-align: center;
+}
+
 /* style applied for buttons */
 button {
   display:inline-block;
