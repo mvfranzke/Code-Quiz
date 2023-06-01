@@ -17,7 +17,7 @@ let scorePercentage = 0;
 
 //Functions
 
-/* will initiate function startQuiz when user clicks the start quiz button */
+/* will initiate function startQuiz when user clicks the start quiz button   */
 function startQuiz() {
   /* to hide the initial screen */
   var startScreenEl = document.getElementById("start-screen");
