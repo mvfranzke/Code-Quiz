@@ -20,7 +20,7 @@ let scorePercentage = 0;
 /* will initiate function startQuiz when user clicks the start quiz button   */
 function startQuiz() {
   /* to hide the initial screen */
-  var startScreenEl = document.getElementById("start-screen");
+  let startScreenEl = document.getElementById("start-screen");
   startScreenEl.setAttribute("class", "hide");
   /* to unhide portion of page */
   questionsEl.removeAttribute("class");
@@ -34,24 +34,56 @@ function startQuiz() {
 /* function to loop the set of questions in questionnaire js   */
 function getQuestion() {
   /* returns the questions from questionnaire js */
-  var currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = questions[currentQuestionIndex];
   /* returns the question */
-  var titleEl = document.getElementById("question-title");
+  let titleEl = document.getElementById("question-title");
   titleEl.textContent = currentQuestion.title;
   /* clears previous question asked */
   choicesEl.innerHTML = "";
 
   /* for loop to go through all questions in questionnaire */
-  for (var i = 0; i < currentQuestion.choices.length; i++){
+  for (let i = 0; i < currentQuestion.choices.length; i++){
    /* turns the choices into buttons user can select */
-    var choice = currentQuestion.choices[i];
-    var choiceNode = document.createElement("button");
+    let choice = currentQuestion.choices[i];
+    let choiceNode = document.createElement("button");
     choiceNode.setAttribute("class", "choice");
     choiceNode.setAttribute("value", choice);
     choiceNode.textContent = i + 1 + ". " + choice;
 
    /* returns button created on the screen */
     choicesEl.appendChild(choiceNode);
+  }
+}
+
+/* function to check if user selected the correct answer or not */
+function questionClick(event) {
+  var buttonEl = event.target;
+
+  // if the clicked element is not a choice button, do nothing.
+  if (!buttonEl.matches(".choice")) {
+    return;
+  }
+
+  // check if user guessed wrong
+  if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+    // penalize time
+    time -= 10;
+
+    if (time < 0) {
+      time = 0;
+    }
+    timerEl.textContent = time;
+  } else {
+    correctCount++;
+  }
+  // move to next question
+  currentQuestionIndex++;
+
+  // check if we've run out of questions
+  if (time <= 0 || currentQuestionIndex === questions.length) {
+    quizEnd();
+  } else {
+    getQuestion();
   }
 }
 
