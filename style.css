@@ -64,3 +64,29 @@ li {
   display: none;
 }
 
+/* style for game start */
+.start {
+  text-align: center;
+}
+
+/* style for score portion */
+.scores {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* style for running timer on the page */
+.timer {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: x-large;
+  background-color: #ffe1a8;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 5px;
+}
