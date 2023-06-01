@@ -74,12 +74,13 @@ function questionClick(event) {
     }
     timerEl.textContent = time;
   } else {
+    /* user will receive 1 pts for every correct answer */
     correctCount++;
   }
-  // move to next question
+  /* loads the next question on the screen */
   currentQuestionIndex++;
 
-  // check if we've run out of questions
+  /* // check if we've run out of questions */
   if (time <= 0 || currentQuestionIndex === questions.length) {
     quizEnd();
   } else {
