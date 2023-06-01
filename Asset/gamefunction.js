@@ -155,7 +155,7 @@ submitBtn.onclick = saveHighscore;
 /* Initiate startQuiz function once user click the Start Quiz button in index html */
 startBtn.onclick = startQuiz;
 
-// user clicks on element containing choices
+/* Initiates questionClick function evertime user selects an answer to the list of questions */
 choicesEl.onclick = questionClick;
 
 initialsEl.onkeyup = checkForEnter;
