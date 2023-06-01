@@ -1,6 +1,6 @@
 /* style applied for whole body element */
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 120%;
 }
 
@@ -17,13 +17,13 @@ a:hover {
 
 /* style applied for buttons */
 button {
-  display: inline-block;
-  margin: 5px;
+  display:inline-block;
+  margin: 20px;
   cursor: pointer;
   font-size: 100%;
-  background-color: #563d7c;
+  background-color: #9b2226;
   border-radius: 5px;
-  padding: 2px 10px;
+  padding: 10px 30px;
   color: white;
   border: 0;
   transition: background-color 0.1s;
@@ -31,7 +31,7 @@ button {
 
  /* style applied when mouse hovers button */
 button:hover {
-  background-color: #8570a5;
+  background-color: #ca6702;
 }
 
 
@@ -61,10 +61,6 @@ li {
   list-style: decimal inside none;
 }
 
-li:nth-child(odd) {
-  background-color: #f3edfc;
-}
-
 .wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
@@ -87,6 +83,14 @@ li:nth-child(odd) {
 
 .timer {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: x-large;
+  background-color: #ffe1a8;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 5px;
 }

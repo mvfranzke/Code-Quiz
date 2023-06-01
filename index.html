@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href="style.css">
   <title>Timed Quiz</title>
 </head>
@@ -12,13 +15,10 @@
   <!-- link to view previous scores-->
   <div class="scores">
   
-    <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+    <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="750"
       src="./scorelog.html">
     </iframe>
   </div>  
-
-
-
 
   <!-- Timer to denote remaining seconds to take the quiz -->
   <div class="timer">Time Left: <span id="time">0</span></div>
@@ -29,7 +29,7 @@
       <h1>Coding Test Game</h1>
       <ul>
         <li class="instruction">You have 1 minute to answer questions related to coding - HTML, Java, CSS.</li>
-        <li class="instruction">For each incorrect answer, 5 seconds will be deducted from your total time.</li>
+        <li class="instruction">For each incorrect answer, 10 seconds will be deducted from your total time.</li>
         <li class="instruction">Once you finish answering all question or when timer reaches 0, the game will end and you can save you score.</li>
       </ul>
       <button id="start">Start Quiz</button>
@@ -44,16 +44,13 @@
     <!-- last screen to appear when quiz ends, user can view their score and save it -->
     <div id="end-screen" class="hide">
       <h2>Quiz has ended!</h2>
-      <p>Your score is :<span id="final-score"></span>.</p>
+      <p>Your score is :<span id="final-score"></span></p>
       <p>Please enter your name: <input type="text" id="initials" />
       <button id="submit">Save</button>
       </p>
 
-      <div id="feedback" class="feedback hide"></div>
-    </div>
-
-<script src="02-Challenge/Main/assets/js/questions.js"></script>  
-<script src="02-Challenge/Main/assets/js/logic.js"></script>
+<script src="./Asset/questions.js"></script>  
+<script src="Asset/logic.js"></script>
 
 </body>
 </html>

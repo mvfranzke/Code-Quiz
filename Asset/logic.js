@@ -70,32 +70,16 @@ function questionClick(event) {
   // check if user guessed wrong
   if (buttonEl.value !== questions[currentQuestionIndex].answer) {
     // penalize time
-    time -= 15;
+    time -= 10;
 
     if (time < 0) {
       time = 0;
     }
-
-    // display new time on page
     timerEl.textContent = time;
-
-    // play "wrong" sound effect
-    sfxWrong.play();
-
-    feedbackEl.textContent = 'Wrong!';
+    
   } else {
-    // play "right" sound effect
-    sfxRight.play();
-
-    feedbackEl.textContent = 'Correct!';
+    
   }
-
-  // flash right/wrong feedback on page for half a second
-  feedbackEl.setAttribute('class', 'feedback');
-  setTimeout(function () {
-    feedbackEl.setAttribute('class', 'feedback hide');
-  }, 1000);
-
   // move to next question
   currentQuestionIndex++;
 
@@ -155,7 +139,7 @@ function saveHighscore() {
     window.localStorage.setItem('highscores', JSON.stringify(highscores));
 
     // redirect to next page
-    window.location.href = 'highscores.html';
+    window.location.href = 'index.html';
   }
 }
 
