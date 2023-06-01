@@ -80,7 +80,7 @@ function questionClick(event) {
   /* loads the next question on the screen */
   currentQuestionIndex++;
 
-  /* // check if we've run out of questions */
+  /* if user have answered all question, quizEnd function to be initiated, otherwise the next question will load on the screen */
   if (time <= 0 || currentQuestionIndex === questions.length) {
     quizEnd();
   } else {
