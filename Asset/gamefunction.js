@@ -131,11 +131,11 @@ function saveHighscore() {
       initials: initials,
     };
 
-    // save to localstorage
+    /* adds the new name and score in the databse or localStorage */
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-    // redirect to next page
+   /* reloads back to index.html to try the quiz again */
     window.location.href = "index.html";
   }
 }
