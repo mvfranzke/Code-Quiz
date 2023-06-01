@@ -4,3 +4,22 @@ body {
   font-size: 120%;
 }
 
+/* style applied for buttons */
+button {
+  display:inline-block;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 100%;
+  background-color: #9b2226;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
+  border: 0;
+  transition: background-color 0.1s;
+}
+
+ /* style applied when mouse hovers button */
+button:hover {
+  background-color: #ca6702;
+}
+
