@@ -5,7 +5,7 @@ function printHighscores() {
   let highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
 
   /* sorts data in decending order */
-  highscores.sort(function (a, b) {
+  highscores.sort(function (b, a) {
     return b.score - a.score;
   });
 
